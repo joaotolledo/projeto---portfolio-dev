@@ -1,2 +1,3 @@
-@import url('styles/global.css');
-@import url('styles/utilityes.css');
+@import url('global.css');
+@import url('utilityes.css');
+@import url('sections.css');

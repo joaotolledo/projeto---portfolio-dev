@@ -18,10 +18,10 @@
     --title-md: bold 24px/120% "Asap", sans-serif;
     --title-sm: bold 16px/120% "Asap", sans-serif;
 
-    --subtitle: 500 56px/120% "Inconsolata", monospace;
+    --subtitle: 400 20px/120% "Inconsolata", monospace;
 
-    --text-md: 500 16px/140% "Maven Pro", sans-serif;
-    --text-sm: 500 14px/140% "Maven Pro", sans-serif;
+    --text-md: 400 16px/140% "Maven Pro", sans-serif;
+    --text-sm: 400 14px/140% "Maven Pro", sans-serif;
 }
 
 * {
@@ -32,4 +32,11 @@
 
 img {
     max-width: 100%;
+}
+
+body {
+    background-color: black;
+    width: 100%;
+    max-width: 1366px;
+    margin: auto;
 }

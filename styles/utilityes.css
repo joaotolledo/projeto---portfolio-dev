@@ -8,4 +8,9 @@
 
 .text-sm {
     font: var(--text-sm);
+    color: var(--gray-300);
+}
+
+.gap-16 {
+    gap: 16px;
 }
