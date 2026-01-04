@@ -145,3 +145,51 @@
         }
     }
 }
+
+#services {
+    background-color: var(--gray-600);
+    padding-block: 88px 120px;
+    padding-inline: 239px;
+
+    header {
+        text-align: center;
+        margin-bottom: 56px;
+
+        h3 {
+            font: var(--subtitle);
+            color: var(--red);
+            margin-bottom: 8px;
+        }
+
+        h2 {
+            font: var(--title-md);
+        }
+    }
+
+    #services-grid {
+        justify-items: center;
+
+        .card {
+            border: 2px solid var(--gray-500);
+            border-radius: 12px;
+            width: 280px;
+            height: 155px;
+            padding: 20px;
+
+            img {
+                object-fit: cover;
+                aspect-ratio: 1/1;
+                margin-bottom: 20px;
+            }
+
+            h4 {
+                font: var(--title-sm);
+            }
+
+            p {
+                font: var(--text-sm);
+                color: var(--gray-200);
+            }
+        }
+    }
+}
