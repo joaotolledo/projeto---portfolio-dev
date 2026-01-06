@@ -57,9 +57,11 @@
                 height: 40px;
                 background-color: var(--gray-400);
                 border-radius: 999px;
+                border: 1.5px solid var(--gray-600);
                 padding: 8px 16px;
                 display: flex;
                 gap: 8px;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
                 img {
                     width: 24px;
@@ -124,6 +126,7 @@
             background-color: var(--gray-400);
             width: 330px;
             border-radius: 12px;
+            position: relative;
 
             img {
                 border-radius: 8px;
@@ -141,6 +144,19 @@
             p {
                 color: var(--gray-200);
                 margin-top: 8px;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                border-radius: 12px;
+                border: 1.5px solid var(--gray-300);
+                opacity: 0;
+                transition: opacity 0.3s ease;
+                pointer-events: none;
+            }
+            &:hover::before {
+                opacity: 1;
             }
         }
     }
@@ -232,18 +248,21 @@
             height: 68px;
             border-radius: 8px;
             padding: 20px;
+            position: relative;
 
             a {
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 gap: 12px;
+                position: absolute;
 
                 .ph {
                     font-size: 28px;
                     object-fit: cover;
                     aspect-ratio: 1/1;
                     color: var(--gray-300);
+                    transition: color 0.3s ease;
                 }
 
                 p {
@@ -259,6 +278,24 @@
                     object-fit: cover;
                     aspect-ratio: 1/1;
                 }
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                border-radius: 8px;
+                border: 1px solid var(--blue);
+                opacity: 0;
+                transition: opacity 0.3s ease;
+            }
+
+            &:hover::before {
+                opacity: 1;
+            }
+
+            &:hover .ph {
+                color: var(--blue);
             }
         }
     }
